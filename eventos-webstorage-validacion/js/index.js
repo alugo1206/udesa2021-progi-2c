@@ -2,20 +2,20 @@ window.addEventListener('load', function(){
 
 // fetch
 
-fetch(`https://api.themoviedb.org/3/movie/popular?api_key=653d947e0c0b2c57f0d55f7a8c550926`)
+fetch(`https://api.giphy.com/v1/gifs/trending?api_key=QWhylJzN2YEo4E02DqmuPkRgUfg2dvK2&limit=25&rating=g`)
     .then(function(response){
         return response.json();
     })
     .then(function(datos){
 
-        console.log(datos.results);
+        console.log(datos.data);
 
-        for(let i = 0; i < datos.results.length; i++){   
+        for(let i = 0; i < datos.data.length; i++){   
             document.querySelector('section').innerHTML += `
                 <article>
-                    <h3>${datos.results[i].title}</h3>
-                    <div><img src="https://image.tmdb.org/t/p/w342${datos.results[i].poster_path}" alt="Imagen del GIF"></div>
-                    <a href="detalle.html?idGif=${datos.results[i].id}">Ver más información</a>
+                    <h3>${datos.data[i].title}</h3>
+                    <div><img src="${datos.data[i].images.original.url}" alt="Imagen del GIF"></div>
+                    <a href="detalle.html?idGif=${datos.data[i].id}">Ver más información</a>
                 </article>
             `;   
         }
