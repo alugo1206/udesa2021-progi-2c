@@ -20,10 +20,10 @@
 // pelis o series del género
 
 // pelis del género
-`https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=es&with_genres=${codigo}`;
+`https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=es&with_genres=${idGenero}`;
 
 // series del género
-`https://api.themoviedb.org/3/discover/tv?api_key=${key}&language=es&with_genres=${codigo}`;
+`https://api.themoviedb.org/3/discover/tv?api_key=${key}&language=es&with_genres=${idGenero}`;
 
 // detalle peli
 `https://api.themoviedb.org/3/movie/${codigo}?api_key=${key}&language=es`;
@@ -32,7 +32,7 @@
 `https://api.themoviedb.org/3/tv/${codigo}?api_key=${key}&language=es`;
 
 // búsqueda pelis
-`https://api.themoviedb.org/3/search/movie?api_key=${key}&language=es&query=${codigo}`;
+`https://api.themoviedb.org/3/search/movie?api_key=${key}&language=es&query=${busqueda}`;
 
 // búsqueda series
 `https://api.themoviedb.org/3/search/tv?api_key=${key}&language=es&query=${codigo}`;
