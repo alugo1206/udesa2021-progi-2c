@@ -1,0 +1,42 @@
+  
+// prefijo URL imagenes
+`https://image.tmdb.org/t/p/original${poster_path}`;
+
+// pelis mejor calificadas
+`https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=es`;
+
+// pelis populares
+`https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=es`;
+
+// series populares
+`https://api.themoviedb.org/3/tv/popular?api_key=${key}&language=es`;
+
+// géneros pelis
+`https://api.themoviedb.org/3/genre/movie/list?api_key=${key}&language=es`;
+  
+// generos series
+`https://api.themoviedb.org/3/genre/tv/list?api_key=${key}&language=es`;
+  
+// género
+`https://api.themoviedb.org/3/genre/${codigo}?api_key=${key}&language=es`;
+
+// pelis o series del género
+
+// pelis del género
+`https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=es&with_genres=${codigo}`;
+
+// series del género
+`https://api.themoviedb.org/3/discover/tv?api_key=${key}&language=es&with_genres=${codigo}`;
+
+// detalle peli
+`https://api.themoviedb.org/3/movie/${codigo}?api_key=${key}&language=es`;
+
+// detalle serie
+`https://api.themoviedb.org/3/tv/${codigo}?api_key=${key}&language=es`;
+
+// búsqueda pelis
+`https://api.themoviedb.org/3/search/movie?api_key=${key}&language=es&query=${codigo}`;
+
+// búsqueda series
+`https://api.themoviedb.org/3/search/tv?api_key=${key}&language=es&query=${codigo}`;
+
