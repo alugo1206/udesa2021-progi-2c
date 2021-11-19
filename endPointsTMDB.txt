@@ -16,9 +16,6 @@
   
 // generos series
 `https://api.themoviedb.org/3/genre/tv/list?api_key=${key}&language=es`;
-  
-// género
-`https://api.themoviedb.org/3/genre/${codigo}?api_key=${key}&language=es`;
 
 // pelis o series del género
 
